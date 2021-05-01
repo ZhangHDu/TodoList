@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+#root{
+   
+}
+#root .todo-container{
+    width: 70%; 
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#root .todo-container .todo-wrap{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+#root .todo-container .todo-wrap .head h1{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: rgb(250, 247, 96);
+}
+#root .todo-container .todo-wrap .head h1 span:first-child{
+    color: rgb(250, 60, 60);
+}
+#root .todo-container .todo-wrap .head h1 span:nth-child(2){
+    color: cornflowerblue;
+}
+#root .todo-container .todo-wrap .head input{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 7px;
+    
+}
+#root .todo-container .todo-wrap .head input:focus{
+    box-shadow: 0px 0px 3px rgb(42, 204, 204);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+#root .todo-container .todo-wrap .main{
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+#root .todo-container .todo-wrap .main li{
+    list-style: none;
+    padding: 7px;
+    position: relative;
+}
+#root .todo-container .todo-wrap .main li~li{
+    border-top: 1px solid #DDDDDD;
+}
+#root .todo-container .todo-wrap .main li::after{
+    content: "";
+    display: block;
+   height: 0;
+   clear: both;
+    
+} 
+#root .todo-container .todo-wrap .main li label{
+    float: left;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+#root .todo-container .todo-wrap .main li label input{
+    margin-right: 10px;
+}
+#root .todo-container .todo-wrap .main li button{
+    float: right;
+    padding:10px 20px 10px 20px;
+    background-color: rgb(233, 59, 59);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+#root .todo-container .todo-wrap .footer{
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+#root .todo-container .todo-wrap .footer::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#root .todo-container .todo-wrap .footer label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#root .todo-container .todo-wrap .footer #btn2{
+    float: right;
+    background-color: rgb(233, 59, 59);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding:10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
