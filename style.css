@@ -81,6 +81,11 @@ html,body{
 #root .todo-container .todo-wrap .main li label input{
     margin-right: 10px;
 }
+.checked{
+   
+    color: rgb(112, 110, 110);
+    text-decoration: line-through;
+}
 #root .todo-container .todo-wrap .main li button{
     float: right;
     padding:10px 20px 10px 20px;
