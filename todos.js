@@ -1,6 +1,4 @@
 //1、实现添加任务
-let oIpt = document.querySelector('#root .todo-container .todo-wrap .head input')
-let oMain = document.querySelector('#root .todo-container .todo-wrap .main')
 //给输入框添加事件
 pushList()
 function pushList(){
@@ -108,6 +106,7 @@ function footerClick(){
             item.checked = footChecked.checked
         })
         changeStyle()
+        changeNum()
     }
 }
 //footer删除按钮点击事件
